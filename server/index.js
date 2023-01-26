@@ -7,10 +7,10 @@ const server = http.createServer((req, res) => {
     // creates our server
     res.statusCode = 200; // http status code returned to the client
     res.setHeader('Content-Type', 'text/plain'); // inform the client that we'll be returning text
-    res.end("Hello World from Node/n"); // end the request and send a response with the specified message
+    res.end("Hello World from NodeJS"); // end the request and send a response with the specified message
 });
 
 server.listen(port, hostname, () => {
     // start watching for connetions on the port specified
-    console.log(`Server running at http://${hostname}:${port}/`);
+    console.log(`Server listening on http://${hostname}:${port}/`);
 })
